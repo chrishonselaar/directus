@@ -217,6 +217,7 @@ router.get(
 	asyncHandler(async (_req, res, next) => {
 		res.locals['payload'] = {
 			data: getAuthProviders(),
+			dfsfsd: 7,
 			disableDefault: env['AUTH_DISABLE_DEFAULT'],
 		};
 

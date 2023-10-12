@@ -8,11 +8,14 @@ import { v4 as uuid } from 'uuid';
 import runMigrations from '../../../database/migrations/run.js';
 import runSeed from '../../../database/seeds/run.js';
 import { generateHash } from '../../../utils/generate-hash.js';
+
 import type { Credentials } from '../../utils/create-db-connection.js';
 import createDBConnection from '../../utils/create-db-connection.js';
 import createEnv from '../../utils/create-env/index.js';
 import { defaultAdminRole, defaultAdminUser } from '../../utils/defaults.js';
+//import { drivers, getDriverForClient } from '../../utils/drivers.js';
 import { drivers, getDriverForClient } from '../../utils/drivers.js';
+
 import { databaseQuestions } from './questions.js';
 
 export default async function init(): Promise<void> {
@@ -30,6 +33,14 @@ export default async function init(): Promise<void> {
 	const dbClient = getDriverForClient(client)!;
 
 	const spinnerDriver = ora('Installing Database Driver...').start();
+
+	// if (client === 'sqlite3') {
+	// 	const pkg = 'mapbox/node-sqlite3#918052b538b0effe6c4a44c74a16b2749c08a0d2';
+	// 	await execa('npm', ['install', '--production', '--build-from-source', pkg]);
+	// } else {
+	// 	await execa('npm', ['install', '--production', client]);
+	// }
+
 	await execa('npm', ['install', dbClient, '--production']);
 	spinnerDriver.stop();
 

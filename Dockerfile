@@ -15,6 +15,8 @@ RUN \
   apk --no-cache add \
   python3 \
   build-base \
+  libspatialite \
+  && ln -s /usr/lib/mod_spatialite.so.7 /usr/lib/mod_spatialite.so \
   && ln -sf /usr/bin/python3 /usr/bin/python \
   ; fi
 
@@ -55,6 +57,7 @@ ENV \
 	STORAGE_LOCAL_ROOT="/directus/uploads" \
 	NODE_ENV="production" \
 	NPM_CONFIG_UPDATE_NOTIFIER="false"
+
 
 COPY --from=builder --chown=node:node /directus/dist .
 
