@@ -1,0 +1,3985 @@
+version: 1
+directus: 13.1.1
+vendor: postgres
+collections:
+  - collection: Activities
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: status
+      archive_value: archived
+      collapse: open
+      collection: Activities
+      color: null
+      display_template: null
+      group: Lessons
+      hidden: true
+      icon: null
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: 1
+      sort_field: null
+      translations: null
+      unarchive_value: draft
+    schema:
+      name: Activities
+  - collection: Activities_files
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Activities_files
+      color: null
+      display_template: null
+      group: Activities
+      hidden: true
+      icon: import_export
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: 1
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Activities_files
+  - collection: Case_Collaboration_Steps
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Case_Collaboration_Steps
+      color: null
+      display_template: null
+      group: Participant_groups_Cases
+      hidden: true
+      icon: null
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: 1
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Case_Collaboration_Steps
+  - collection: Case_Collaboration_Steps_Cases_tests
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Case_Collaboration_Steps_Cases_tests
+      color: null
+      display_template: null
+      group: null
+      hidden: true
+      icon: import_export
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: null
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Case_Collaboration_Steps_Cases_tests
+  - collection: Cases
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: archived
+      collapse: open
+      collection: Cases
+      color: null
+      display_template: null
+      group: Courses
+      hidden: true
+      icon: null
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: 2
+      sort_field: null
+      translations: null
+      unarchive_value: draft
+    schema:
+      name: Cases
+  - collection: Cases_tests
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Cases_tests
+      color: null
+      display_template: null
+      group: Cases
+      hidden: true
+      icon: import_export
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: 1
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Cases_tests
+  - collection: Cases_tests_files
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Cases_tests_files
+      color: null
+      display_template: null
+      group: Cases_tests
+      hidden: true
+      icon: import_export
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: 1
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Cases_tests_files
+  - collection: Courses
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: status
+      archive_value: archived
+      collapse: open
+      collection: Courses
+      color: null
+      display_template: null
+      group: null
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: 1
+      sort_field: null
+      translations: null
+      unarchive_value: draft
+    schema:
+      name: Courses
+  - collection: Diagnostic_tests
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Diagnostic_tests
+      color: null
+      display_template: null
+      group: General_diagnoses
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: 2
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Diagnostic_tests
+  - collection: Differential_diagnosis
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: status
+      archive_value: archived
+      collapse: open
+      collection: Differential_diagnosis
+      color: null
+      display_template: null
+      group: Participant_groups_Cases
+      hidden: true
+      icon: null
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: 2
+      sort_field: null
+      translations: null
+      unarchive_value: draft
+    schema:
+      name: Differential_diagnosis
+  - collection: General_diagnoses
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: General_diagnoses
+      color: null
+      display_template: null
+      group: null
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: 2
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: General_diagnoses
+  - collection: General_diagnoses_Diagnostic_tests
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: General_diagnoses_Diagnostic_tests
+      color: null
+      display_template: null
+      group: General_diagnoses
+      hidden: true
+      icon: import_export
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: 1
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: General_diagnoses_Diagnostic_tests
+  - collection: Lessons
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: status
+      archive_value: archived
+      collapse: open
+      collection: Lessons
+      color: null
+      display_template: null
+      group: Courses
+      hidden: true
+      icon: null
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: 3
+      sort_field: null
+      translations: null
+      unarchive_value: draft
+    schema:
+      name: Lessons
+  - collection: Participant_groups
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Participant_groups
+      color: null
+      display_template: null
+      group: Courses
+      hidden: true
+      icon: groups_2
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: 4
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Participant_groups
+  - collection: Participant_groups_Cases
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Participant_groups_Cases
+      color: null
+      display_template: null
+      group: Participant_groups
+      hidden: true
+      icon: import_export
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: 2
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Participant_groups_Cases
+  - collection: Participant_groups_directus_users
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Participant_groups_directus_users
+      color: null
+      display_template: null
+      group: Participant_groups
+      hidden: true
+      icon: import_export
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: 1
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Participant_groups_directus_users
+fields:
+  - collection: Activities
+    field: activity_files
+    type: uuid
+    meta:
+      collection: Activities
+      conditions: null
+      display: null
+      display_options: null
+      field: activity_files
+      group: null
+      hidden: false
+      interface: file
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 5
+      special:
+        - file
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: activity_files
+      table: Activities
+      data_type: uuid
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_files
+      foreign_key_column: id
+  - collection: Activities
+    field: id
+    type: integer
+    meta:
+      collection: Activities
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: Activities
+      data_type: integer
+      default_value: nextval('"Activities_id_seq"'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Activities
+    field: lesson_id
+    type: integer
+    meta:
+      collection: Activities
+      conditions: null
+      display: null
+      display_options: null
+      field: lesson_id
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        enableCreate: false
+        enableSelect: false
+      readonly: false
+      required: true
+      sort: 6
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: lesson_id
+      table: Activities
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Lessons
+      foreign_key_column: id
+  - collection: Activities
+    field: status
+    type: string
+    meta:
+      collection: Activities
+      conditions: null
+      display: labels
+      display_options:
+        choices:
+          - text: $t:published
+            value: published
+            foreground: '#FFFFFF'
+            background: var(--primary)
+          - text: $t:draft
+            value: draft
+            foreground: '#18222F'
+            background: '#D3DAE4'
+          - text: $t:archived
+            value: archived
+            foreground: '#FFFFFF'
+            background: var(--warning)
+        showAsDot: true
+      field: status
+      group: null
+      hidden: false
+      interface: select-dropdown
+      note: null
+      options:
+        choices:
+          - text: $t:published
+            value: published
+          - text: $t:draft
+            value: draft
+          - text: $t:archived
+            value: archived
+      readonly: false
+      required: false
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: status
+      table: Activities
+      data_type: character varying
+      default_value: draft
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Activities
+    field: text
+    type: text
+    meta:
+      collection: Activities
+      conditions: null
+      display: null
+      display_options: null
+      field: text
+      group: null
+      hidden: false
+      interface: input-rich-text-md
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 4
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: text
+      table: Activities
+      data_type: text
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Activities
+    field: title
+    type: string
+    meta:
+      collection: Activities
+      conditions: null
+      display: null
+      display_options: null
+      field: title
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 3
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: title
+      table: Activities
+      data_type: character varying
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Activities_files
+    field: Activities_id
+    type: integer
+    meta:
+      collection: Activities_files
+      conditions: null
+      display: null
+      display_options: null
+      field: Activities_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Activities_id
+      table: Activities_files
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Activities_files
+    field: directus_files_id
+    type: uuid
+    meta:
+      collection: Activities_files
+      conditions: null
+      display: null
+      display_options: null
+      field: directus_files_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 3
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: directus_files_id
+      table: Activities_files
+      data_type: uuid
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Activities_files
+    field: id
+    type: integer
+    meta:
+      collection: Activities_files
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: Activities_files
+      data_type: integer
+      default_value: nextval('"Activities_files_id_seq"'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Case_Collaboration_Steps
+    field: date_created
+    type: timestamp
+    meta:
+      collection: Case_Collaboration_Steps
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_created
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 4
+      special:
+        - date-created
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: date_created
+      table: Case_Collaboration_Steps
+      data_type: timestamp with time zone
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Case_Collaboration_Steps
+    field: id
+    type: integer
+    meta:
+      collection: Case_Collaboration_Steps
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: Case_Collaboration_Steps
+      data_type: integer
+      default_value: nextval('"Case_Collaboration_Steps_id_seq"'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Case_Collaboration_Steps
+    field: results
+    type: alias
+    meta:
+      collection: Case_Collaboration_Steps
+      conditions: null
+      display: null
+      display_options: null
+      field: results
+      group: null
+      hidden: false
+      interface: list-m2m
+      note: null
+      options:
+        enableLink: true
+        filter:
+          _and:
+            - results_files:
+                Cases_tests_id:
+                  test:
+                    id:
+                      _eq: '{{test_requested.id}}'
+      readonly: false
+      required: false
+      sort: 6
+      special:
+        - m2m
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+  - collection: Case_Collaboration_Steps
+    field: test_requested
+    type: integer
+    meta:
+      collection: Case_Collaboration_Steps
+      conditions:
+        - rule: null
+          options:
+            enableCreate: true
+            enableSelect: true
+      display: null
+      display_options: null
+      field: test_requested
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{title}}'
+      readonly: false
+      required: true
+      sort: 5
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: test_requested
+      table: Case_Collaboration_Steps
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Diagnostic_tests
+      foreign_key_column: id
+  - collection: Case_Collaboration_Steps
+    field: user_created
+    type: uuid
+    meta:
+      collection: Case_Collaboration_Steps
+      conditions: null
+      display: user
+      display_options: null
+      field: user_created
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: 3
+      special:
+        - user-created
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: user_created
+      table: Case_Collaboration_Steps
+      data_type: uuid
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_users
+      foreign_key_column: id
+  - collection: Case_Collaboration_Steps_Cases_tests
+    field: Case_Collaboration_Steps_id
+    type: integer
+    meta:
+      collection: Case_Collaboration_Steps_Cases_tests
+      conditions: null
+      display: null
+      display_options: null
+      field: Case_Collaboration_Steps_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Case_Collaboration_Steps_id
+      table: Case_Collaboration_Steps_Cases_tests
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Case_Collaboration_Steps
+      foreign_key_column: id
+  - collection: Case_Collaboration_Steps_Cases_tests
+    field: Cases_tests_id
+    type: integer
+    meta:
+      collection: Case_Collaboration_Steps_Cases_tests
+      conditions: null
+      display: null
+      display_options: null
+      field: Cases_tests_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 3
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Cases_tests_id
+      table: Case_Collaboration_Steps_Cases_tests
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Cases_tests
+      foreign_key_column: id
+  - collection: Case_Collaboration_Steps_Cases_tests
+    field: id
+    type: integer
+    meta:
+      collection: Case_Collaboration_Steps_Cases_tests
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: Case_Collaboration_Steps_Cases_tests
+      data_type: integer
+      default_value: nextval('"Case_Collaboration_Steps_Cases_tests_id_seq"'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Cases
+    field: course_id
+    type: integer
+    meta:
+      collection: Cases
+      conditions: null
+      display: null
+      display_options: null
+      field: course_id
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        enableCreate: false
+        enableSelect: false
+      readonly: false
+      required: true
+      sort: 4
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: course_id
+      table: Cases
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Courses
+      foreign_key_column: id
+  - collection: Cases
+    field: id
+    type: integer
+    meta:
+      collection: Cases
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: Cases
+      data_type: integer
+      default_value: nextval('"Cases_id_seq"'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Cases
+    field: tests_with_prefilled_results
+    type: alias
+    meta:
+      collection: Cases
+      conditions: null
+      display: related-values
+      display_options:
+        template: '{{results_files.id}}'
+      field: tests_with_prefilled_results
+      group: null
+      hidden: false
+      interface: list-o2m
+      note: null
+      options:
+        enableLink: true
+        enableSelect: false
+        template: '{{test.title}}'
+      readonly: false
+      required: false
+      sort: 5
+      special:
+        - o2m
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+  - collection: Cases
+    field: title
+    type: string
+    meta:
+      collection: Cases
+      conditions: null
+      display: null
+      display_options: null
+      field: title
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 3
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: title
+      table: Cases
+      data_type: character varying
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Cases_tests
+    field: Cases_id
+    type: integer
+    meta:
+      collection: Cases_tests
+      conditions: null
+      display: null
+      display_options: null
+      field: Cases_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: true
+      required: true
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Cases_id
+      table: Cases_tests
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Cases
+      foreign_key_column: id
+  - collection: Cases_tests
+    field: id
+    type: integer
+    meta:
+      collection: Cases_tests
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: Cases_tests
+      data_type: integer
+      default_value: nextval('"Cases_tests_id_seq"'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Cases_tests
+    field: results_files
+    type: alias
+    meta:
+      collection: Cases_tests
+      conditions: null
+      display: null
+      display_options: null
+      field: results_files
+      group: null
+      hidden: false
+      interface: files
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 6
+      special:
+        - files
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+  - collection: Cases_tests
+    field: results_summary
+    type: text
+    meta:
+      collection: Cases_tests
+      conditions: null
+      display: null
+      display_options: null
+      field: results_summary
+      group: null
+      hidden: false
+      interface: input-rich-text-md
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 7
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: results_summary
+      table: Cases_tests
+      data_type: text
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Cases_tests
+    field: test
+    type: integer
+    meta:
+      collection: Cases_tests
+      conditions: null
+      display: null
+      display_options: null
+      field: test
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{title}}'
+      readonly: false
+      required: true
+      sort: 5
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: test
+      table: Cases_tests
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Diagnostic_tests
+      foreign_key_column: id
+  - collection: Cases_tests_files
+    field: Cases_tests_id
+    type: integer
+    meta:
+      collection: Cases_tests_files
+      conditions: null
+      display: null
+      display_options: null
+      field: Cases_tests_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Cases_tests_id
+      table: Cases_tests_files
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Cases_tests
+      foreign_key_column: id
+  - collection: Cases_tests_files
+    field: directus_files_id
+    type: uuid
+    meta:
+      collection: Cases_tests_files
+      conditions: null
+      display: null
+      display_options: null
+      field: directus_files_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 3
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: directus_files_id
+      table: Cases_tests_files
+      data_type: uuid
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_files
+      foreign_key_column: id
+  - collection: Cases_tests_files
+    field: id
+    type: integer
+    meta:
+      collection: Cases_tests_files
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: Cases_tests_files
+      data_type: integer
+      default_value: nextval('"Cases_tests_files_id_seq"'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Courses
+    field: case_groups
+    type: alias
+    meta:
+      collection: Courses
+      conditions: null
+      display: null
+      display_options: null
+      field: case_groups
+      group: null
+      hidden: false
+      interface: list-o2m
+      note: null
+      options:
+        enableLink: true
+        enableSelect: false
+      readonly: false
+      required: false
+      sort: 10
+      special:
+        - o2m
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+  - collection: Courses
+    field: id
+    type: integer
+    meta:
+      collection: Courses
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: Courses
+      data_type: integer
+      default_value: nextval('"Courses_id_seq"'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Courses
+    field: lessons
+    type: alias
+    meta:
+      collection: Courses
+      conditions: null
+      display: null
+      display_options: null
+      field: lessons
+      group: null
+      hidden: false
+      interface: list-o2m
+      note: null
+      options:
+        enableLink: true
+        enableSelect: false
+        template: '{{title}}'
+      readonly: false
+      required: false
+      sort: 9
+      special:
+        - o2m
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+  - collection: Courses
+    field: participant_fee
+    type: integer
+    meta:
+      collection: Courses
+      conditions: null
+      display: null
+      display_options: null
+      field: participant_fee
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        iconRight: euro_symbol
+        min: 0
+      readonly: false
+      required: false
+      sort: 7
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: participant_fee
+      table: Courses
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Courses
+    field: poster_image
+    type: uuid
+    meta:
+      collection: Courses
+      conditions: null
+      display: null
+      display_options: null
+      field: poster_image
+      group: null
+      hidden: false
+      interface: file-image
+      note: null
+      options: {}
+      readonly: false
+      required: false
+      sort: 3
+      special:
+        - file
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: poster_image
+      table: Courses
+      data_type: uuid
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_files
+      foreign_key_column: id
+  - collection: Courses
+    field: start_date
+    type: dateTime
+    meta:
+      collection: Courses
+      conditions: null
+      display: null
+      display_options: null
+      field: start_date
+      group: null
+      hidden: false
+      interface: datetime
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 6
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: start_date
+      table: Courses
+      data_type: timestamp without time zone
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Courses
+    field: status
+    type: string
+    meta:
+      collection: Courses
+      conditions: null
+      display: labels
+      display_options:
+        choices:
+          - text: $t:published
+            value: published
+            foreground: '#FFFFFF'
+            background: var(--primary)
+          - text: $t:draft
+            value: draft
+            foreground: '#18222F'
+            background: '#D3DAE4'
+          - text: $t:archived
+            value: archived
+            foreground: '#FFFFFF'
+            background: var(--warning)
+        showAsDot: true
+      field: status
+      group: null
+      hidden: false
+      interface: select-dropdown
+      note: null
+      options:
+        choices:
+          - text: $t:published
+            value: published
+          - text: $t:draft
+            value: draft
+          - text: $t:archived
+            value: archived
+          - text: Accepting registrations
+            value: active-registration
+          - text: Closed registration
+            value: closed-registration
+      readonly: false
+      required: false
+      sort: 5
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: status
+      table: Courses
+      data_type: character varying
+      default_value: draft
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Courses
+    field: summary
+    type: text
+    meta:
+      collection: Courses
+      conditions: null
+      display: null
+      display_options: null
+      field: summary
+      group: null
+      hidden: false
+      interface: input-rich-text-md
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 4
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: summary
+      table: Courses
+      data_type: text
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Courses
+    field: title
+    type: string
+    meta:
+      collection: Courses
+      conditions: null
+      display: null
+      display_options: null
+      field: title
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: title
+      table: Courses
+      data_type: character varying
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Diagnostic_tests
+    field: cost
+    type: string
+    meta:
+      collection: Diagnostic_tests
+      conditions: null
+      display: null
+      display_options: null
+      field: cost
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        iconRight: euro_symbol
+      readonly: false
+      required: false
+      sort: 7
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: cost
+      table: Diagnostic_tests
+      data_type: character varying
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Diagnostic_tests
+    field: counter_indications
+    type: text
+    meta:
+      collection: Diagnostic_tests
+      conditions: null
+      display: null
+      display_options: null
+      field: counter_indications
+      group: null
+      hidden: false
+      interface: input-rich-text-md
+      note: null
+      options:
+        customSyntax: null
+      readonly: false
+      required: false
+      sort: 5
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: counter_indications
+      table: Diagnostic_tests
+      data_type: text
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Diagnostic_tests
+    field: id
+    type: integer
+    meta:
+      collection: Diagnostic_tests
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: Diagnostic_tests
+      data_type: integer
+      default_value: nextval('"Diagnostic_tests_id_seq"'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Diagnostic_tests
+    field: indications
+    type: text
+    meta:
+      collection: Diagnostic_tests
+      conditions: null
+      display: null
+      display_options: null
+      field: indications
+      group: null
+      hidden: false
+      interface: input-rich-text-md
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 4
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: indications
+      table: Diagnostic_tests
+      data_type: text
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Diagnostic_tests
+    field: risks
+    type: text
+    meta:
+      collection: Diagnostic_tests
+      conditions: null
+      display: null
+      display_options: null
+      field: risks
+      group: null
+      hidden: false
+      interface: input-rich-text-md
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 3
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: risks
+      table: Diagnostic_tests
+      data_type: text
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Diagnostic_tests
+    field: time_required
+    type: string
+    meta:
+      collection: Diagnostic_tests
+      conditions: null
+      display: null
+      display_options: null
+      field: time_required
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        iconRight: avg_pace
+      readonly: false
+      required: false
+      sort: 6
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: time_required
+      table: Diagnostic_tests
+      data_type: character varying
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Diagnostic_tests
+    field: title
+    type: string
+    meta:
+      collection: Diagnostic_tests
+      conditions: null
+      display: null
+      display_options: null
+      field: title
+      group: null
+      hidden: false
+      interface: input
+      note: >-
+        [     {         "text": "Biopsy",         "value": "biopsy"     },    
+        {         "text": "Blood test",         "value": "blood test"     },    
+        {         "text": "Stain request",         "value": "stain-request"    
+        },     {         "text": "Genome",         "value": "genome"     },    
+        {         "text": "Clinical observations",         "value":
+        "clinical-observations"     },     {         "text": "X-Ray",        
+        "value": "x-ray"     },     {         "text": "MRI",         "value":
+        "mri"     },     {         "text": "CAT-scan",         "value":
+        "cat-scan"     } ]
+      options:
+        placeholder: >-
+          [     {         "text": "Biopsy",         "value": "biopsy"     },    
+          {         "text": "Blood test",         "value": "blood test"    
+          },     {         "text": "Stain request",         "value":
+          "stain-request"     },     {         "text": "Genome",        
+          "value": "genome"     },     {         "text": "Clinical
+          observations",         "value": "clinical-observations"     },    
+          {         "text": "X-Ray",         "value": "x-ray"     },    
+          {         "text": "MRI",         "value": "mri"     },     {        
+          "text": "CAT-scan",         "value": "cat-scan"     } ]
+      readonly: false
+      required: true
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: title
+      table: Diagnostic_tests
+      data_type: character varying
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Differential_diagnosis
+    field: certainty
+    type: integer
+    meta:
+      collection: Differential_diagnosis
+      conditions: null
+      display: rating
+      display_options: null
+      field: certainty
+      group: null
+      hidden: false
+      interface: slider
+      note: null
+      options:
+        alwaysShowValue: true
+        maxValue: 10
+        minValue: 1
+        stepInterval: 1
+      readonly: false
+      required: true
+      sort: 6
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: certainty
+      table: Differential_diagnosis
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Differential_diagnosis
+    field: diagnosis
+    type: integer
+    meta:
+      collection: Differential_diagnosis
+      conditions: null
+      display: null
+      display_options: null
+      field: diagnosis
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{title}}'
+      readonly: false
+      required: true
+      sort: 5
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: diagnosis
+      table: Differential_diagnosis
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: General_diagnoses
+      foreign_key_column: id
+  - collection: Differential_diagnosis
+    field: id
+    type: integer
+    meta:
+      collection: Differential_diagnosis
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: Differential_diagnosis
+      data_type: integer
+      default_value: nextval('"Differential_diagnosis_id_seq"'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Differential_diagnosis
+    field: participant_group_case
+    type: integer
+    meta:
+      collection: Differential_diagnosis
+      conditions: null
+      display: null
+      display_options: null
+      field: participant_group_case
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 4
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: participant_group_case
+      table: Differential_diagnosis
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Participant_groups_Cases
+      foreign_key_column: id
+  - collection: Differential_diagnosis
+    field: status
+    type: string
+    meta:
+      collection: Differential_diagnosis
+      conditions: null
+      display: labels
+      display_options:
+        choices:
+          - text: $t:published
+            value: published
+            foreground: '#FFFFFF'
+            background: var(--primary)
+          - text: $t:draft
+            value: draft
+            foreground: '#18222F'
+            background: '#D3DAE4'
+          - text: $t:archived
+            value: archived
+            foreground: '#FFFFFF'
+            background: var(--warning)
+        showAsDot: true
+      field: status
+      group: null
+      hidden: false
+      interface: select-dropdown
+      note: null
+      options:
+        choices:
+          - text: $t:published
+            value: published
+          - text: $t:draft
+            value: draft
+          - text: $t:archived
+            value: archived
+      readonly: false
+      required: false
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: status
+      table: Differential_diagnosis
+      data_type: character varying
+      default_value: draft
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: General_diagnoses
+    field: description
+    type: text
+    meta:
+      collection: General_diagnoses
+      conditions: null
+      display: null
+      display_options: null
+      field: description
+      group: null
+      hidden: false
+      interface: input-rich-text-md
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 3
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: description
+      table: General_diagnoses
+      data_type: text
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: General_diagnoses
+    field: essential_tests
+    type: alias
+    meta:
+      collection: General_diagnoses
+      conditions: null
+      display: null
+      display_options: null
+      field: essential_tests
+      group: null
+      hidden: false
+      interface: list-m2m
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 4
+      special:
+        - m2m
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+  - collection: General_diagnoses
+    field: id
+    type: integer
+    meta:
+      collection: General_diagnoses
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: General_diagnoses
+      data_type: integer
+      default_value: nextval('"General_diagnoses_id_seq"'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: General_diagnoses
+    field: title
+    type: string
+    meta:
+      collection: General_diagnoses
+      conditions: null
+      display: null
+      display_options: null
+      field: title
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: title
+      table: General_diagnoses
+      data_type: character varying
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: General_diagnoses_Diagnostic_tests
+    field: Diagnostic_tests_id
+    type: integer
+    meta:
+      collection: General_diagnoses_Diagnostic_tests
+      conditions: null
+      display: null
+      display_options: null
+      field: Diagnostic_tests_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 3
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Diagnostic_tests_id
+      table: General_diagnoses_Diagnostic_tests
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Diagnostic_tests
+      foreign_key_column: id
+  - collection: General_diagnoses_Diagnostic_tests
+    field: General_diagnoses_id
+    type: integer
+    meta:
+      collection: General_diagnoses_Diagnostic_tests
+      conditions: null
+      display: null
+      display_options: null
+      field: General_diagnoses_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: General_diagnoses_id
+      table: General_diagnoses_Diagnostic_tests
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: General_diagnoses
+      foreign_key_column: id
+  - collection: General_diagnoses_Diagnostic_tests
+    field: id
+    type: integer
+    meta:
+      collection: General_diagnoses_Diagnostic_tests
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: General_diagnoses_Diagnostic_tests
+      data_type: integer
+      default_value: nextval('"General_diagnoses_Diagnostic_tests_id_seq"'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Lessons
+    field: course_id
+    type: integer
+    meta:
+      collection: Lessons
+      conditions: null
+      display: null
+      display_options: null
+      field: course_id
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        enableCreate: false
+        enableSelect: false
+      readonly: false
+      required: true
+      sort: 10
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: course_id
+      table: Lessons
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Courses
+      foreign_key_column: id
+  - collection: Lessons
+    field: date_created
+    type: timestamp
+    meta:
+      collection: Lessons
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_created
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 4
+      special:
+        - date-created
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: date_created
+      table: Lessons
+      data_type: timestamp with time zone
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Lessons
+    field: date_updated
+    type: timestamp
+    meta:
+      collection: Lessons
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_updated
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 6
+      special:
+        - date-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: date_updated
+      table: Lessons
+      data_type: timestamp with time zone
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Lessons
+    field: id
+    type: integer
+    meta:
+      collection: Lessons
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: Lessons
+      data_type: integer
+      default_value: nextval('"Lessons_id_seq"'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Lessons
+    field: learning_goals
+    type: json
+    meta:
+      collection: Lessons
+      conditions: null
+      display: null
+      display_options: null
+      field: learning_goals
+      group: null
+      hidden: false
+      interface: tags
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 8
+      special:
+        - cast-json
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: learning_goals
+      table: Lessons
+      data_type: json
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Lessons
+    field: pages
+    type: alias
+    meta:
+      collection: Lessons
+      conditions: null
+      display: null
+      display_options: null
+      field: pages
+      group: null
+      hidden: false
+      interface: list-o2m
+      note: null
+      options:
+        enableLink: true
+        template: '{{activity_files.title}}'
+      readonly: false
+      required: false
+      sort: 9
+      special:
+        - o2m
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+  - collection: Lessons
+    field: status
+    type: string
+    meta:
+      collection: Lessons
+      conditions: null
+      display: labels
+      display_options:
+        choices:
+          - text: $t:published
+            value: published
+            foreground: '#FFFFFF'
+            background: var(--primary)
+          - text: $t:draft
+            value: draft
+            foreground: '#18222F'
+            background: '#D3DAE4'
+          - text: $t:archived
+            value: archived
+            foreground: '#FFFFFF'
+            background: var(--warning)
+        showAsDot: true
+      field: status
+      group: null
+      hidden: false
+      interface: select-dropdown
+      note: null
+      options:
+        choices:
+          - text: $t:published
+            value: published
+          - text: $t:draft
+            value: draft
+          - text: $t:archived
+            value: archived
+      readonly: false
+      required: false
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: status
+      table: Lessons
+      data_type: character varying
+      default_value: draft
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Lessons
+    field: title
+    type: string
+    meta:
+      collection: Lessons
+      conditions: null
+      display: null
+      display_options: null
+      field: title
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 7
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: title
+      table: Lessons
+      data_type: character varying
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Lessons
+    field: user_created
+    type: uuid
+    meta:
+      collection: Lessons
+      conditions: null
+      display: user
+      display_options: null
+      field: user_created
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: 3
+      special:
+        - user-created
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: user_created
+      table: Lessons
+      data_type: uuid
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_users
+      foreign_key_column: id
+  - collection: Lessons
+    field: user_updated
+    type: uuid
+    meta:
+      collection: Lessons
+      conditions: null
+      display: user
+      display_options: null
+      field: user_updated
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: 5
+      special:
+        - user-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: user_updated
+      table: Lessons
+      data_type: uuid
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_users
+      foreign_key_column: id
+  - collection: Participant_groups
+    field: course_id
+    type: integer
+    meta:
+      collection: Participant_groups
+      conditions: null
+      display: null
+      display_options: null
+      field: course_id
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        enableCreate: false
+        enableSelect: false
+      readonly: false
+      required: true
+      sort: 7
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: course_id
+      table: Participant_groups
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Courses
+      foreign_key_column: id
+  - collection: Participant_groups
+    field: group_cases
+    type: alias
+    meta:
+      collection: Participant_groups
+      conditions: null
+      display: null
+      display_options: null
+      field: group_cases
+      group: null
+      hidden: false
+      interface: list-o2m
+      note: null
+      options:
+        template: '{{Cases_id.id}}'
+      readonly: false
+      required: false
+      sort: 9
+      special:
+        - o2m
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+  - collection: Participant_groups
+    field: group_members
+    type: alias
+    meta:
+      collection: Participant_groups
+      conditions: null
+      display: null
+      display_options: null
+      field: group_members
+      group: null
+      hidden: false
+      interface: list-m2m
+      note: null
+      options:
+        enableLink: true
+      readonly: false
+      required: false
+      sort: 5
+      special:
+        - m2m
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+  - collection: Participant_groups
+    field: id
+    type: integer
+    meta:
+      collection: Participant_groups
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: Participant_groups
+      data_type: integer
+      default_value: nextval('"Participant_groups_id_seq"'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Participant_groups
+    field: name
+    type: string
+    meta:
+      collection: Participant_groups
+      conditions: null
+      display: null
+      display_options: null
+      field: name
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 8
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: name
+      table: Participant_groups
+      data_type: character varying
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Participant_groups
+    field: status
+    type: string
+    meta:
+      collection: Participant_groups
+      conditions: null
+      display: labels
+      display_options:
+        showAsDot: true
+      field: status
+      group: null
+      hidden: false
+      interface: select-dropdown
+      note: null
+      options:
+        allowNone: true
+        allowOther: true
+        choices:
+          - text: All done
+            value: all-done
+          - text: Archived
+            value: archived
+          - text: Active
+            value: active
+          - text: Inactive
+            value: inactive
+        icon: lock_reset
+      readonly: false
+      required: false
+      sort: 3
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: status
+      table: Participant_groups
+      data_type: character varying
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Participant_groups_Cases
+    field: Cases_id
+    type: integer
+    meta:
+      collection: Participant_groups_Cases
+      conditions: null
+      display: null
+      display_options: null
+      field: Cases_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 3
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Cases_id
+      table: Participant_groups_Cases
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Cases
+      foreign_key_column: id
+  - collection: Participant_groups_Cases
+    field: Participant_groups_id
+    type: integer
+    meta:
+      collection: Participant_groups_Cases
+      conditions: null
+      display: null
+      display_options: null
+      field: Participant_groups_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Participant_groups_id
+      table: Participant_groups_Cases
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Participant_groups
+      foreign_key_column: id
+  - collection: Participant_groups_Cases
+    field: id
+    type: integer
+    meta:
+      collection: Participant_groups_Cases
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: Participant_groups_Cases
+      data_type: integer
+      default_value: nextval('"Participant_groups_Cases_id_seq"'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Participant_groups_directus_users
+    field: Participant_groups_id
+    type: integer
+    meta:
+      collection: Participant_groups_directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: Participant_groups_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Participant_groups_id
+      table: Participant_groups_directus_users
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Participant_groups
+      foreign_key_column: id
+  - collection: Participant_groups_directus_users
+    field: directus_users_id
+    type: uuid
+    meta:
+      collection: Participant_groups_directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: directus_users_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 3
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: directus_users_id
+      table: Participant_groups_directus_users
+      data_type: uuid
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_users
+      foreign_key_column: id
+  - collection: Participant_groups_directus_users
+    field: id
+    type: integer
+    meta:
+      collection: Participant_groups_directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: Participant_groups_directus_users
+      data_type: integer
+      default_value: nextval('"Participant_groups_directus_users_id_seq"'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: directus_files
+    field: wsi_metadata_json
+    type: json
+    meta:
+      collection: directus_files
+      conditions: null
+      display: raw
+      display_options: null
+      field: wsi_metadata_json
+      group: null
+      hidden: false
+      interface: input-code
+      note: null
+      options:
+        lineNumber: false
+        lineWrapping: true
+        template: |-
+          {stain: "HE",
+          imagewidth:1024,
+          imageheight:2048, 
+          pixel_per_micron:0.5,
+          wsi_file_type:"svs",
+          max_zoom:20,
+          min_zoom:0,
+          tileSize:512,
+          tile_url_template:"https://sdfdsf{x}.png"
+          }
+      readonly: false
+      required: false
+      sort: 1
+      special:
+        - cast-json
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: wsi_metadata_json
+      table: directus_files
+      data_type: json
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+relations:
+  - collection: Activities
+    field: activity_files
+    related_collection: directus_files
+    meta:
+      junction_field: Activities_id
+      many_collection: Activities
+      many_field: activity_files
+      one_allowed_collections: null
+      one_collection: directus_files
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Activities
+      column: activity_files
+      foreign_key_table: directus_files
+      foreign_key_column: id
+      constraint_name: activities_activity_files_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: Activities
+    field: lesson_id
+    related_collection: Lessons
+    meta:
+      junction_field: null
+      many_collection: Activities
+      many_field: lesson_id
+      one_allowed_collections: null
+      one_collection: Lessons
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: pages
+      sort_field: null
+    schema:
+      table: Activities
+      column: lesson_id
+      foreign_key_table: Lessons
+      foreign_key_column: id
+      constraint_name: activities_lesson_id_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: Case_Collaboration_Steps
+    field: test_requested
+    related_collection: Diagnostic_tests
+    meta:
+      junction_field: null
+      many_collection: Case_Collaboration_Steps
+      many_field: test_requested
+      one_allowed_collections: null
+      one_collection: Diagnostic_tests
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Case_Collaboration_Steps
+      column: test_requested
+      foreign_key_table: Diagnostic_tests
+      foreign_key_column: id
+      constraint_name: case_collaboration_steps_test_requested_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: Case_Collaboration_Steps
+    field: user_created
+    related_collection: directus_users
+    meta:
+      junction_field: null
+      many_collection: Case_Collaboration_Steps
+      many_field: user_created
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Case_Collaboration_Steps
+      column: user_created
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: case_collaboration_steps_user_created_foreign
+      on_update: NO ACTION
+      on_delete: NO ACTION
+  - collection: Case_Collaboration_Steps_Cases_tests
+    field: Case_Collaboration_Steps_id
+    related_collection: Case_Collaboration_Steps
+    meta:
+      junction_field: Cases_tests_id
+      many_collection: Case_Collaboration_Steps_Cases_tests
+      many_field: Case_Collaboration_Steps_id
+      one_allowed_collections: null
+      one_collection: Case_Collaboration_Steps
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: results
+      sort_field: null
+    schema:
+      table: Case_Collaboration_Steps_Cases_tests
+      column: Case_Collaboration_Steps_id
+      foreign_key_table: Case_Collaboration_Steps
+      foreign_key_column: id
+      constraint_name: case_collaboration_steps_cases_tests_case___20197936_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: Case_Collaboration_Steps_Cases_tests
+    field: Cases_tests_id
+    related_collection: Cases_tests
+    meta:
+      junction_field: Case_Collaboration_Steps_id
+      many_collection: Case_Collaboration_Steps_Cases_tests
+      many_field: Cases_tests_id
+      one_allowed_collections: null
+      one_collection: Cases_tests
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Case_Collaboration_Steps_Cases_tests
+      column: Cases_tests_id
+      foreign_key_table: Cases_tests
+      foreign_key_column: id
+      constraint_name: case_collaboration_steps_cases_tests_cases_tests_id_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: Cases
+    field: course_id
+    related_collection: Courses
+    meta:
+      junction_field: null
+      many_collection: Cases
+      many_field: course_id
+      one_allowed_collections: null
+      one_collection: Courses
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Cases
+      column: course_id
+      foreign_key_table: Courses
+      foreign_key_column: id
+      constraint_name: cases_course_id_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: Cases_tests
+    field: Cases_id
+    related_collection: Cases
+    meta:
+      junction_field: item
+      many_collection: Cases_tests
+      many_field: Cases_id
+      one_allowed_collections: null
+      one_collection: Cases
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: tests_with_prefilled_results
+      sort_field: null
+    schema:
+      table: Cases_tests
+      column: Cases_id
+      foreign_key_table: Cases
+      foreign_key_column: id
+      constraint_name: cases_tests_cases_id_foreign
+      on_update: NO ACTION
+      on_delete: NO ACTION
+  - collection: Cases_tests
+    field: test
+    related_collection: Diagnostic_tests
+    meta:
+      junction_field: null
+      many_collection: Cases_tests
+      many_field: test
+      one_allowed_collections: null
+      one_collection: Diagnostic_tests
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Cases_tests
+      column: test
+      foreign_key_table: Diagnostic_tests
+      foreign_key_column: id
+      constraint_name: cases_tests_test_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: Cases_tests_files
+    field: Cases_tests_id
+    related_collection: Cases_tests
+    meta:
+      junction_field: directus_files_id
+      many_collection: Cases_tests_files
+      many_field: Cases_tests_id
+      one_allowed_collections: null
+      one_collection: Cases_tests
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: results_files
+      sort_field: null
+    schema:
+      table: Cases_tests_files
+      column: Cases_tests_id
+      foreign_key_table: Cases_tests
+      foreign_key_column: id
+      constraint_name: cases_tests_files_cases_tests_id_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: Cases_tests_files
+    field: directus_files_id
+    related_collection: directus_files
+    meta:
+      junction_field: Cases_tests_id
+      many_collection: Cases_tests_files
+      many_field: directus_files_id
+      one_allowed_collections: null
+      one_collection: directus_files
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Cases_tests_files
+      column: directus_files_id
+      foreign_key_table: directus_files
+      foreign_key_column: id
+      constraint_name: cases_tests_files_directus_files_id_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: Courses
+    field: poster_image
+    related_collection: directus_files
+    meta:
+      junction_field: null
+      many_collection: Courses
+      many_field: poster_image
+      one_allowed_collections: null
+      one_collection: directus_files
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Courses
+      column: poster_image
+      foreign_key_table: directus_files
+      foreign_key_column: id
+      constraint_name: courses_poster_image_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: Differential_diagnosis
+    field: diagnosis
+    related_collection: General_diagnoses
+    meta:
+      junction_field: null
+      many_collection: Differential_diagnosis
+      many_field: diagnosis
+      one_allowed_collections: null
+      one_collection: General_diagnoses
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Differential_diagnosis
+      column: diagnosis
+      foreign_key_table: General_diagnoses
+      foreign_key_column: id
+      constraint_name: differential_diagnosis_diagnosis_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: Differential_diagnosis
+    field: participant_group_case
+    related_collection: Participant_groups_Cases
+    meta:
+      junction_field: null
+      many_collection: Differential_diagnosis
+      many_field: participant_group_case
+      one_allowed_collections: null
+      one_collection: Participant_groups_Cases
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Differential_diagnosis
+      column: participant_group_case
+      foreign_key_table: Participant_groups_Cases
+      foreign_key_column: id
+      constraint_name: differential_diagnosis_participant_group_case_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: General_diagnoses_Diagnostic_tests
+    field: Diagnostic_tests_id
+    related_collection: Diagnostic_tests
+    meta:
+      junction_field: General_diagnoses_id
+      many_collection: General_diagnoses_Diagnostic_tests
+      many_field: Diagnostic_tests_id
+      one_allowed_collections: null
+      one_collection: Diagnostic_tests
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: General_diagnoses_Diagnostic_tests
+      column: Diagnostic_tests_id
+      foreign_key_table: Diagnostic_tests
+      foreign_key_column: id
+      constraint_name: general_diagnoses_diagnostic_tests_diagnosti__7368cf_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: General_diagnoses_Diagnostic_tests
+    field: General_diagnoses_id
+    related_collection: General_diagnoses
+    meta:
+      junction_field: Diagnostic_tests_id
+      many_collection: General_diagnoses_Diagnostic_tests
+      many_field: General_diagnoses_id
+      one_allowed_collections: null
+      one_collection: General_diagnoses
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: essential_tests
+      sort_field: null
+    schema:
+      table: General_diagnoses_Diagnostic_tests
+      column: General_diagnoses_id
+      foreign_key_table: General_diagnoses
+      foreign_key_column: id
+      constraint_name: general_diagnoses_diagnostic_tests_general__2c0ad306_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: Lessons
+    field: course_id
+    related_collection: Courses
+    meta:
+      junction_field: null
+      many_collection: Lessons
+      many_field: course_id
+      one_allowed_collections: null
+      one_collection: Courses
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: lessons
+      sort_field: null
+    schema:
+      table: Lessons
+      column: course_id
+      foreign_key_table: Courses
+      foreign_key_column: id
+      constraint_name: lessons_course_id_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: Lessons
+    field: user_created
+    related_collection: directus_users
+    meta:
+      junction_field: null
+      many_collection: Lessons
+      many_field: user_created
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Lessons
+      column: user_created
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: lessons_user_created_foreign
+      on_update: NO ACTION
+      on_delete: NO ACTION
+  - collection: Lessons
+    field: user_updated
+    related_collection: directus_users
+    meta:
+      junction_field: null
+      many_collection: Lessons
+      many_field: user_updated
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Lessons
+      column: user_updated
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: lessons_user_updated_foreign
+      on_update: NO ACTION
+      on_delete: NO ACTION
+  - collection: Participant_groups
+    field: course_id
+    related_collection: Courses
+    meta:
+      junction_field: null
+      many_collection: Participant_groups
+      many_field: course_id
+      one_allowed_collections: null
+      one_collection: Courses
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: case_groups
+      sort_field: null
+    schema:
+      table: Participant_groups
+      column: course_id
+      foreign_key_table: Courses
+      foreign_key_column: id
+      constraint_name: participant_groups_course_id_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: Participant_groups_Cases
+    field: Cases_id
+    related_collection: Cases
+    meta:
+      junction_field: Participant_groups_id
+      many_collection: Participant_groups_Cases
+      many_field: Cases_id
+      one_allowed_collections: null
+      one_collection: Cases
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Participant_groups_Cases
+      column: Cases_id
+      foreign_key_table: Cases
+      foreign_key_column: id
+      constraint_name: participant_groups_cases_cases_id_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: Participant_groups_Cases
+    field: Participant_groups_id
+    related_collection: Participant_groups
+    meta:
+      junction_field: Cases_id
+      many_collection: Participant_groups_Cases
+      many_field: Participant_groups_id
+      one_allowed_collections: null
+      one_collection: Participant_groups
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Participant_groups_Cases
+      column: Participant_groups_id
+      foreign_key_table: Participant_groups
+      foreign_key_column: id
+      constraint_name: participant_groups_cases_participant_groups_id_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: Participant_groups_directus_users
+    field: Participant_groups_id
+    related_collection: Participant_groups
+    meta:
+      junction_field: directus_users_id
+      many_collection: Participant_groups_directus_users
+      many_field: Participant_groups_id
+      one_allowed_collections: null
+      one_collection: Participant_groups
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: group_members
+      sort_field: null
+    schema:
+      table: Participant_groups_directus_users
+      column: Participant_groups_id
+      foreign_key_table: Participant_groups
+      foreign_key_column: id
+      constraint_name: participant_groups_directus_users_particip__10eb847f_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: Participant_groups_directus_users
+    field: directus_users_id
+    related_collection: directus_users
+    meta:
+      junction_field: Participant_groups_id
+      many_collection: Participant_groups_directus_users
+      many_field: directus_users_id
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Participant_groups_directus_users
+      column: directus_users_id
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: participant_groups_directus_users_directus_users_id_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
